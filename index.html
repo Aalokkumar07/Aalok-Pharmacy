@@ -157,20 +157,51 @@
                     <li><span>3</span> Get Doorstep Delivery</li>
                 </ul>
             </div>
-           <form id="uploadForm" class="upload-form">
-                <h3>Quick Order</h3>
-    
-                <input type="text" placeholder="Full Name" pattern="[A-Za-z\s]+" title="Only Letters are allowed" required>
-    
-                <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" title="Please enter a valid 10-digit mobile number" required>
-    
-                <input type="text" placeholder="Address" required>
+           <form id="uploadForm"
+      class="upload-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
 
-                <input type="text" placeholder="Enter Medicine Name" required>
-    
-                 
-                <button type="submit" class="btn btn-primary btn-block">Submit Order</button>
-            </form>
+    <input type="hidden"
+           name="access_key"
+           value="YAHAN_APNI_ACCESS_KEY_DALO">
+
+    <input type="hidden"
+           name="subject"
+           value="New Medicine Order">
+
+    <h3>Quick Order</h3>
+
+    <input type="text"
+           name="name"
+           placeholder="Full Name"
+           pattern="[A-Za-z\s]+"
+           title="Only Letters are allowed"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Mobile Number"
+           pattern="[0-9]{10}"
+           maxlength="10"
+           title="Please enter a valid 10-digit mobile number"
+           required>
+
+    <input type="text"
+           name="address"
+           placeholder="Address"
+           required>
+
+    <input type="text"
+           name="medicine"
+           placeholder="Enter Medicine Name"
+           required>
+
+    <button type="submit" class="btn btn-primary btn-block">
+        Submit Order
+    </button>
+
+</form>
         </div>
     </section>s
 
