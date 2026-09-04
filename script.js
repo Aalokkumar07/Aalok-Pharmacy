@@ -47,22 +47,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Prescription Form Submission
-    const uploadForm = document.getElementById('uploadForm');
 
-    if (uploadForm) {
-        uploadForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get values
-            const name = uploadForm.querySelector('input[type="text"]').value;
-            const phone = uploadForm.querySelector('input[type="tel"]').value;
-            
-            alert(`Thank you ${name}! Your order prescription has been submitted successfully. We will call you shortly on ${phone}.`);
-            
-            // Reset Form
-            uploadForm.reset();
-            fileLabel.innerHTML = `<i class="fas fa-cloud-upload-alt"></i> Choose File / Photo`;
-        });
-    }
 });
